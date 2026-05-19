@@ -1,0 +1,16 @@
+:root {
+  --ella-font: system-ui, -apple-system, sans-serif;
+  --ella-bg: #f8f7f4;
+  --ella-border: #d0d5db;
+  --ella-blue-light: #9BB5C9;
+  --ella-blue-dark: #7A9AB5;
+  --ella-gray-light: #d5dce3;
+  --ella-text-muted: #8a9aa8;
+}
+
+/* Adaptable to Forumactif */
+.ella-app-container *, 
+.ella-app-container *::before, 
+.ella-app-container *::after {
+  box-sizing: border-box;
+}

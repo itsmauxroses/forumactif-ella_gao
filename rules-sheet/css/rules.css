@@ -1,0 +1,228 @@
+/* Conteneur principal */
+.ella-app-container {
+  min-height: 100vh;
+  background-color: var(--ella-bg);
+  padding: 32px;
+  font-family: var(--ella-font);
+}
+
+@media (min-width: 768px) {
+  .ella-app-container { padding: 48px; }
+}
+
+.ella-max-width-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.ella-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .ella-header-section {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.ella-logo-wrapper { flex-shrink: 0; }
+
+.ella-header-text {
+  flex: 1;
+  border-left: 1px solid var(--ella-border);
+  padding-left: 32px;
+}
+
+.ella-header-text p {
+  color: var(--ella-text-muted);
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* Section Citation / Stroke Title */
+.ella-quote-section { margin-bottom: 80px; }
+
+.ella-main-title {
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .ella-main-title { font-size: 60px; }
+}
+
+.text-light-gray { color: var(--ella-gray-light); }
+.text-blue-light { color: var(--ella-blue-light); }
+.text-stroke {
+  -webkit-text-stroke: 1.5px var(--ella-gray-light);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Grille 2 Colonnes */
+.ella-grid-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+  .ella-grid-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+}
+
+.ella-column {
+  border-top: 2px solid var(--ella-border);
+  padding-top: 24px;
+}
+
+.ella-column-title {
+  color: var(--ella-blue-light);
+  margin: 0 0 16px 0;
+  letter-spacing: 0.05em;
+}
+
+.ella-star-big {
+  font-size: 36px;
+  margin-right: 8px;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.ella-title-text {
+  font-size: 24px;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.ella-column-content {
+  color: var(--ella-text-muted);
+  line-height: 1.625;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.ella-highlight {
+  color: var(--ella-blue-dark);
+}
+
+/* Section Règles */
+.ella-rules-wrapper {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+.ella-rules-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.ella-rules-title-line {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.ella-line {
+  width: 64px;
+  border-top: 1px solid var(--ella-border);
+}
+
+.ella-rules-main-title {
+  font-size: 60px;
+  -webkit-text-stroke: 1.5px var(--ella-gray-light);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .ella-rules-main-title { font-size: 84px; }
+}
+
+.ella-rules-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ella-badge-filled {
+  background-color: var(--ella-blue-dark);
+  color: #ffffff;
+  padding: 4px 16px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ella-badge-text {
+  color: var(--ella-blue-light);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ella-rule-block {
+  margin-bottom: 48px;
+}
+
+.ella-rule-row-header {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ella-rule-row-header.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.ella-rule-number {
+  color: var(--ella-blue-light);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.ella-star-small {
+  font-size: 30px;
+  margin-right: 4px;
+}
+
+.ella-rule-number span:last-child {
+  font-size: 36px;
+}
+
+.ella-line-dotted {
+  flex: 1;
+  border-top: 1px dotted var(--ella-border);
+  margin-top: 24px;
+}
+
+.ella-rule-text {
+  color: var(--ella-text-muted);
+  line-height: 1.625;
+  margin: 0;
+  text-align: justify;
+}

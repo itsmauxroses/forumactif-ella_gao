@@ -1,5 +1,5 @@
 /* Search for style */
-@import '../css/ella-core.css';
+@import '../rules-sheet/css/ella-core.css';
 
 /* Loading rules */
 @import 'regles.css';
